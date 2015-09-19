@@ -1,0 +1,33 @@
+#
+# Configuration file for AOS Project 2
+# 
+#
+# As per the "shell" convention, anything following a hash sign is
+# a comment and should be ignored by the parser.
+# Number of nodes
+10
+# First, we list the location of each node
+#
+# Format is:
+# Identifier	Hostname	Port	
+0 dc11 3588 4124	
+1 dc12 5666 5245
+2 dc13 5733 6316	
+3 dc14 2331 4553
+4 dc15 3114 2315	
+5 dc16 3442 4793	
+6 dc17 7898 6718	
+7 dc18 7321 6563	
+8 dc19 4351 2601	
+9 dc20 6774 4547
+# Numbers of files in the file system
+20
+#Parameters to control the behavior of the application
+# number of operations executed per node
+1000
+# Mean delay between two consecutive operations (assume exponentially distributed)
+50
+# Fraction of read operations
+80
+# Parameters of exponential backoff (minimum and maximum waiting times)
+500 1000

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+
+# Change this to your netid
+netid=axj143730
+
+#
+# Directory that needs to be deleted
+#
+DELDIR=$HOME/root/*
+
+for file1 in $HOME/NodeHost* ; do
+if [[ -f "$file1" ]]
+then
+	rm $file1 
+fi
+done
+
+for file2 in $DELDIR/* ; do
+if [[ -f "$file2" ]]
+then
+	rm $file2
+fi
+done
+
+for dir1 in $DELDIR ; do
+if [[ -d "$dir1" ]]
+then
+	rmdir $dir1
+fi
+done
+
+DELFILE=$HOME/logfile
+rm $DELFILE
